@@ -8,7 +8,7 @@ RUN zypper clean -a
 # Base packages
 RUN zypper refresh 
 RUN zypper install -y --no-recommends \
-        zip unzip wget mc htop jq supervisor openssh-server
+        zip unzip tar gzip wget mc htop jq supervisor openssh-server go
 #-------------------------------------------------
 # Set locale
 ENV LANG en_US.UTF-8
